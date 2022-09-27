@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';  
 import Customers from "../src/components/Customers/Customers";
 import Pagination from "../src/components/Pagination/Pagination";
+import Header from './components/Header/Header';
 
 const App = () => {
   // State to get and set the customer details
@@ -79,9 +80,7 @@ const App = () => {
   return (
     <>
       <main className="container">
-        <header className="mb-1 mt-5">
-          <h1 className="text-dark fw-bold">Customers</h1>
-        </header>
+        <Header />
         <section>
           <input
           type="text"
