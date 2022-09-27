@@ -23,8 +23,7 @@ const Customers = ({ customers, loading }) => {
                   <p className="card-text">
                     <span
                       className={`flag-icon 
-                      flag-icon-squared 
-                      flag-icon-${customer.country_code.toLowerCase()}`}
+                      flag-icon-${customer.country_code.toLowerCase()} border border-dark`}
                     ></span>
                     &nbsp;
                     {customer.city}
